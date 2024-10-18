@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+.container.admin.support button{
+  opacity: .7;
+  background-color: green;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.container.admin.support button:hover{
+  opacity: 1;
+  background-color: blueviolet;
+}
+
+.container.admin.support :where(input, textarea){
+  border: 1px solid rgb(125, 125, 125, 0.6);
+  background-color: rgb(245, 245, 245, .9);
+  color: #000;
+  transition: all .3s ease-out;  
+}
+
+.container.admin.support input:focus{
+  border:1px solid green;
+  box-shadow: 2px 2px 50px 2px rgb(125, 125, 125, .1);
+  background-color: white;
+  color: #000;
+}
+
+.container.admin.support textarea:focus{
+  border:1px solid green;
+  box-shadow: 2px 2px 50px 2px rgb(125, 125, 125, .1);
+  background-color: rgb(125, 125, 125, .01);
+}
+
+#user-input:focus{
+  border: 1px solid red;
+}
